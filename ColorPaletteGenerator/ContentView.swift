@@ -7,10 +7,43 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
+struct ContentView: View
+{
+    
+    var body: some View
+    {
+        VStack
+        {
+            Spacer()
+            HStack
+            {
+                Spacer()
+                ColorView()
+                Spacer()
+                ColorView()
+                Spacer()
+            }
+            Spacer()
+            HStack
+            {
+                Spacer()
+                ColorView()
+                Spacer()
+                ColorView()
+                Spacer()
+            }
+            Spacer()
+            HStack
+            {
+                Spacer()
+                ColorView()
+                Spacer()
+                ColorView()
+                Spacer()
+            }
+            Spacer()
+        }
+        .background(.gray)
     }
 }
 
