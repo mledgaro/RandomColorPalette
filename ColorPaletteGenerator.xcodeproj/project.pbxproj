@@ -14,7 +14,8 @@
 		04CAC39C28B060200064C693 /* ColorPaletteGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC39B28B060200064C693 /* ColorPaletteGeneratorTests.swift */; };
 		04CAC3A628B060200064C693 /* ColorPaletteGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC3A528B060200064C693 /* ColorPaletteGeneratorUITests.swift */; };
 		04CAC3A828B060200064C693 /* ColorPaletteGeneratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC3A728B060200064C693 /* ColorPaletteGeneratorUITestsLaunchTests.swift */; };
-		04CAC3B628B09A3B0064C693 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC3B528B09A3B0064C693 /* ColorView.swift */; };
+		04CAC3B628B09A3B0064C693 /* ColorCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC3B528B09A3B0064C693 /* ColorCardView.swift */; };
+		04CAC3B828B0C8940064C693 /* PaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC3B728B0C8940064C693 /* PaletteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +46,8 @@
 		04CAC3A128B060200064C693 /* ColorPaletteGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorPaletteGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CAC3A528B060200064C693 /* ColorPaletteGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteGeneratorUITests.swift; sourceTree = "<group>"; };
 		04CAC3A728B060200064C693 /* ColorPaletteGeneratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteGeneratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		04CAC3B528B09A3B0064C693 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
+		04CAC3B528B09A3B0064C693 /* ColorCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCardView.swift; sourceTree = "<group>"; };
+		04CAC3B728B0C8940064C693 /* PaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +98,9 @@
 		04CAC38928B0601A0064C693 /* ColorPaletteGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				04CAC3B428B09A1F0064C693 /* Views */,
 				04CAC38A28B0601A0064C693 /* ColorPaletteGeneratorApp.swift */,
 				04CAC38C28B0601A0064C693 /* ContentView.swift */,
+				04CAC3B428B09A1F0064C693 /* Views */,
 				04CAC38E28B060200064C693 /* Assets.xcassets */,
 				04CAC39028B060200064C693 /* Preview Content */,
 			);
@@ -133,7 +135,8 @@
 		04CAC3B428B09A1F0064C693 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				04CAC3B528B09A3B0064C693 /* ColorView.swift */,
+				04CAC3B528B09A3B0064C693 /* ColorCardView.swift */,
+				04CAC3B728B0C8940064C693 /* PaletteView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -268,8 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04CAC3B628B09A3B0064C693 /* ColorView.swift in Sources */,
+				04CAC3B628B09A3B0064C693 /* ColorCardView.swift in Sources */,
 				04CAC38D28B0601A0064C693 /* ContentView.swift in Sources */,
+				04CAC3B828B0C8940064C693 /* PaletteView.swift in Sources */,
 				04CAC38B28B0601A0064C693 /* ColorPaletteGeneratorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

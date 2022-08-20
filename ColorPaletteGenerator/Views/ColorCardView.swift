@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ColorView: View
+struct ColorCardView: View
 {
     
     var body: some View
@@ -32,6 +32,6 @@ struct ColorView: View
 
 struct ColorView_Previews: PreviewProvider {
     static var previews: some View {
-        ColorView()
+        ColorCardView()
     }
 }
