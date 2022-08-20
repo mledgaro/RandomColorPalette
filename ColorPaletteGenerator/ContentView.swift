@@ -40,7 +40,7 @@ struct ContentView: View
                     .font(.largeTitle)
                     .padding(.vertical, 10.0)
                 
-                PaletteView()
+                PaletteView(colorPalette: [.black, .black, .black, .black, .black])
                 Spacer()
                 HStack
                 {

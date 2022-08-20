@@ -9,29 +9,32 @@ import SwiftUI
 
 struct PaletteView: View
 {
+    
+    var colorPalette: [Color]
+    
     var body: some View
     {
         VStack{
             HStack
             {
                 Spacer()
-                ColorCardView()
+                ColorCardView(color: colorPalette[0])
                 Spacer()
-                ColorCardView()
-                Spacer()
-            }
-            HStack
-            {
-                Spacer()
-                ColorCardView()
-                Spacer()
-                ColorCardView()
+                ColorCardView(color: colorPalette[1])
                 Spacer()
             }
             HStack
             {
                 Spacer()
-                ColorCardView()
+                ColorCardView(color: colorPalette[2])
+                Spacer()
+                ColorCardView(color: colorPalette[3])
+                Spacer()
+            }
+            HStack
+            {
+                Spacer()
+                ColorCardView(color: colorPalette[4])
                 Spacer()
             }
         }
@@ -40,6 +43,6 @@ struct PaletteView: View
 
 struct PaletteView_Previews: PreviewProvider {
     static var previews: some View {
-        PaletteView()
+        PaletteView(colorPalette: [.black, .black, .black, .black, .black])
     }
 }
