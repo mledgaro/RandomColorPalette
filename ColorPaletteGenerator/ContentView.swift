@@ -9,17 +9,11 @@ import SwiftUI
 
 struct ContentView: View
 {
-    
     var body: some View
     {
         ZStack
         {
-            Color(
-                red: 232/255,
-                green: 236/255,
-                blue: 243/255
-            )
-            .ignoresSafeArea()
+            AppColors.background.ignoresSafeArea()
             VStack
             {
                 HStack
@@ -40,7 +34,7 @@ struct ContentView: View
                     .font(.largeTitle)
                     .padding(.vertical, 10.0)
                 
-                PaletteView(colorPalette: [.black, .black, .black, .black, .black])
+                PaletteView(colorPalette: AppColors.testPalette)
                 Spacer()
                 HStack
                 {
@@ -51,11 +45,7 @@ struct ContentView: View
                     .padding(.vertical)
                     .frame(maxWidth: .infinity)
                     .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
-                    .background(
-                        Color(
-                            red: 126/255,
-                            green: 108/255,
-                            blue: 202/255))
+                    .background(AppColors.generateBtn)
                     .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
                     Spacer()
                 }

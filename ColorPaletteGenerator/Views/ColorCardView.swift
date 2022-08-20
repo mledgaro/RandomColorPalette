@@ -20,7 +20,7 @@ struct ColorCardView: View
                 .frame(width: 100.0, height: 100.0)
                 .foregroundColor(color)
                 .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
-            Text(color.description)
+            Text(color.hex)
                 .font(.headline)
                 .fontWeight(.bold)
         }

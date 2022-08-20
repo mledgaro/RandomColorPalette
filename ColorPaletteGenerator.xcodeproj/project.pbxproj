@@ -16,6 +16,7 @@
 		04CAC3A828B060200064C693 /* ColorPaletteGeneratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC3A728B060200064C693 /* ColorPaletteGeneratorUITestsLaunchTests.swift */; };
 		04CAC3B628B09A3B0064C693 /* ColorCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC3B528B09A3B0064C693 /* ColorCardView.swift */; };
 		04CAC3B828B0C8940064C693 /* PaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC3B728B0C8940064C693 /* PaletteView.swift */; };
+		04CAC3BB28B0D1B70064C693 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC3BA28B0D1B70064C693 /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		04CAC3A728B060200064C693 /* ColorPaletteGeneratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteGeneratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		04CAC3B528B09A3B0064C693 /* ColorCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCardView.swift; sourceTree = "<group>"; };
 		04CAC3B728B0C8940064C693 /* PaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteView.swift; sourceTree = "<group>"; };
+		04CAC3BA28B0D1B70064C693 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				04CAC38A28B0601A0064C693 /* ColorPaletteGeneratorApp.swift */,
 				04CAC38C28B0601A0064C693 /* ContentView.swift */,
 				04CAC3B428B09A1F0064C693 /* Views */,
+				04CAC3B928B0D1810064C693 /* Models */,
 				04CAC38E28B060200064C693 /* Assets.xcassets */,
 				04CAC39028B060200064C693 /* Preview Content */,
 			);
@@ -139,6 +142,14 @@
 				04CAC3B728B0C8940064C693 /* PaletteView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		04CAC3B928B0D1810064C693 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04CAC3BA28B0D1B70064C693 /* AppColors.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +285,7 @@
 				04CAC3B628B09A3B0064C693 /* ColorCardView.swift in Sources */,
 				04CAC38D28B0601A0064C693 /* ContentView.swift in Sources */,
 				04CAC3B828B0C8940064C693 /* PaletteView.swift in Sources */,
+				04CAC3BB28B0D1B70064C693 /* AppColors.swift in Sources */,
 				04CAC38B28B0601A0064C693 /* ColorPaletteGeneratorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
