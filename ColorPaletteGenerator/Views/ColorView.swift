@@ -15,10 +15,11 @@ struct ColorView: View
         VStack(alignment: .center, spacing: 5.0)
         {
             Rectangle()
+                .frame(width: 100.0, height: 100.0)
                 .foregroundColor(/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/)
                 .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
             Text("#000000")
-                .font(.title2)
+                .font(.headline)
                 .fontWeight(.bold)
         }
         .padding(.all, 10.0)
