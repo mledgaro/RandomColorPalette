@@ -17,6 +17,9 @@
 		04CAC3B628B09A3B0064C693 /* ColorCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC3B528B09A3B0064C693 /* ColorCardView.swift */; };
 		04CAC3B828B0C8940064C693 /* PaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC3B728B0C8940064C693 /* PaletteView.swift */; };
 		04CAC3BB28B0D1B70064C693 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC3BA28B0D1B70064C693 /* AppColors.swift */; };
+		04CAC3BD28B1837A0064C693 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC3BC28B183790064C693 /* ColorPalette.swift */; };
+		04CAC3C028B365FC0064C693 /* ColormindAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC3BF28B365FC0064C693 /* ColormindAPI.swift */; };
+		04CAC3C228B367390064C693 /* PaletteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC3C128B367390064C693 /* PaletteData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,10 @@
 		04CAC3B528B09A3B0064C693 /* ColorCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCardView.swift; sourceTree = "<group>"; };
 		04CAC3B728B0C8940064C693 /* PaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteView.swift; sourceTree = "<group>"; };
 		04CAC3BA28B0D1B70064C693 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		04CAC3BC28B183790064C693 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		04CAC3BF28B365FC0064C693 /* ColormindAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColormindAPI.swift; sourceTree = "<group>"; };
+		04CAC3C128B367390064C693 /* PaletteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteData.swift; sourceTree = "<group>"; };
+		04CAC3C628B370880064C693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +107,7 @@
 		04CAC38928B0601A0064C693 /* ColorPaletteGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				04CAC3C628B370880064C693 /* Info.plist */,
 				04CAC38A28B0601A0064C693 /* ColorPaletteGeneratorApp.swift */,
 				04CAC38C28B0601A0064C693 /* ContentView.swift */,
 				04CAC3B428B09A1F0064C693 /* Views */,
@@ -148,6 +156,9 @@
 			isa = PBXGroup;
 			children = (
 				04CAC3BA28B0D1B70064C693 /* AppColors.swift */,
+				04CAC3BC28B183790064C693 /* ColorPalette.swift */,
+				04CAC3BF28B365FC0064C693 /* ColormindAPI.swift */,
+				04CAC3C128B367390064C693 /* PaletteData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -282,10 +293,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CAC3C028B365FC0064C693 /* ColormindAPI.swift in Sources */,
 				04CAC3B628B09A3B0064C693 /* ColorCardView.swift in Sources */,
 				04CAC38D28B0601A0064C693 /* ContentView.swift in Sources */,
 				04CAC3B828B0C8940064C693 /* PaletteView.swift in Sources */,
 				04CAC3BB28B0D1B70064C693 /* AppColors.swift in Sources */,
+				04CAC3C228B367390064C693 /* PaletteData.swift in Sources */,
+				04CAC3BD28B1837A0064C693 /* ColorPalette.swift in Sources */,
 				04CAC38B28B0601A0064C693 /* ColorPaletteGeneratorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +461,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ColorPaletteGenerator/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ColorPaletteGenerator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -457,6 +472,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mledgaro.ColorPaletteGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -475,6 +491,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ColorPaletteGenerator/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ColorPaletteGenerator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -485,6 +502,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mledgaro.ColorPaletteGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

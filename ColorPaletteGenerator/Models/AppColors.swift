@@ -37,6 +37,7 @@ extension Color
     var hex: String
     {
         let colorComponents = UIColor(self).cgColor.components
+        
         let r = colorComponents?[0] ?? 0
         let g = colorComponents?[1] ?? 0
         let b = colorComponents?[2] ?? 0

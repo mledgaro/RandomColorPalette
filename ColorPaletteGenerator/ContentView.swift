@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ContentView: View
 {
+    @StateObject var paletteData = PaletteData()
+    
+    
     var body: some View
     {
         ZStack
@@ -34,7 +37,7 @@ struct ContentView: View
                     .font(.largeTitle)
                     .padding(.vertical, 10.0)
                 
-                PaletteView(colorPalette: AppColors.testPalette)
+                PaletteView(colorPalette: AppColors.testPalette )
                 Spacer()
                 HStack
                 {

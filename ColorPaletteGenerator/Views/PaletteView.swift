@@ -43,6 +43,6 @@ struct PaletteView: View
 
 struct PaletteView_Previews: PreviewProvider {
     static var previews: some View {
-        PaletteView(colorPalette: [.black, .black, .black, .black, .black])
+        PaletteView(colorPalette: AppColors.testPalette)
     }
 }
