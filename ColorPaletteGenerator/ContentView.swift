@@ -46,7 +46,9 @@ struct ContentView: View
                 {
                     Spacer()
                     Button("Generate palette") {
-                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                        Task {
+                            await paletteData.load()
+                        }
                     }
                     .padding(.vertical)
                     .frame(maxWidth: .infinity)
