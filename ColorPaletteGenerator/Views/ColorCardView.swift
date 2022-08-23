@@ -24,11 +24,16 @@ struct ColorCardView: View
                 .font(.headline)
                 .fontWeight(.bold)
         }
+        .contentShape(Rectangle())
         .padding(.all, 10.0)
-        
         .background(.white)
         .border(Color.white, width: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)
         .cornerRadius(/*@START_MENU_TOKEN@*/15.0/*@END_MENU_TOKEN@*/)
+        .onTapGesture {
+            let pasteboard = UIPasteboard.general
+            pasteboard.string = color.hex
+            print(color.hex)
+        }
     }
 }
 

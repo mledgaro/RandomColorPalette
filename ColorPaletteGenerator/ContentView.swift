@@ -22,8 +22,7 @@ struct ContentView: View
                 HStack
                 {
                     Spacer()
-                    //Text(/*@START_MENU_TOKEN@*/"Color #000000 copied to your clipboard"/*@END_MENU_TOKEN@*/)
-                    Text(String(paletteData.mainColor))
+                    Text(/*@START_MENU_TOKEN@*/"Color #000000 copied to your clipboard"/*@END_MENU_TOKEN@*/)
                         .font(.headline)
                         .frame(maxWidth: .infinity)
                         .foregroundColor(Color.white)
