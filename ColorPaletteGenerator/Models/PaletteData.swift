@@ -11,8 +11,7 @@ import SwiftUI
 @MainActor
 class PaletteData: ObservableObject
 {
-    //@Published var palette: [Color] = []
-    
+    @Published var palette: ColorPalette? = nil
     
     init()
     {
@@ -24,14 +23,16 @@ class PaletteData: ObservableObject
     
     func load() async
     {
-        
-        do {
-            //self.palette = try await api.fetchRandomPalette()
-            try await ColormindAPI.fetchRandomPalette()
-        } catch {
+        do
+        {
+            let cpalette = try await ColormindAPI.fetchRandomPalette()
+            palette = cpalette
+            //print(palette?.palette)
+        }
+        catch
+        {
             print(error)
         }
-        
     }
+    
 }
-

@@ -12,9 +12,8 @@ struct ColormindAPI
     static private let apiUrl = URL(string: "http://colormind.io/api/")
     static private let reqParams: String = "{\"model\": \"default\"}"
     
-    static func fetchRandomPalette() async throws -> String?
+    static func fetchRandomPalette() async throws -> ColorPalette
     {
-        
         var apiRequest = URLRequest(url: apiUrl!)
         
         apiRequest.httpMethod = "POST"
@@ -24,28 +23,11 @@ struct ColormindAPI
         
         let (data, _) = try await URLSession.shared.data(for: apiRequest)
         
-        let response = String(data: data, encoding: .utf8)
+        //let response = String(data: data, encoding: .utf8)
+        //print(response!)
         
-        print(response!)
+        let response = try JSONDecoder().decode(ColorPalette.self, from: data)
         
-        /*{
-            (data, response, error) in
-            
-            // Check for Error
-            if let error = error {
-                print("Error took place \(error)")
-                return
-            }
-            
-            // Convert HTTP Response Data to a String
-            if let data = data, let dataString = String(data: data, encoding: .utf8) {
-                apiResp = dataString
-            }
-            
-        }
-        task.resume()*/
-        
-        //let response = try await JSONDecoder().decode(Response.self, from: data)
         return response
     }
     
