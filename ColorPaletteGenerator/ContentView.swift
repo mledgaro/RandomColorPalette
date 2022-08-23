@@ -13,6 +13,8 @@ struct ContentView: View
     
     @State var clipboardColor = Color.black
     
+    @State var showClipboardMsg = false
+    
     var body: some View
     {
         ZStack
@@ -20,13 +22,15 @@ struct ContentView: View
             AppColors.background.ignoresSafeArea()
             VStack
             {
-                ClipboardMessage(color: $clipboardColor)
+                ClipboardMessage(color: $clipboardColor,
+                                 show: $showClipboardMsg)
                 
                 Text("Color palette generator")
                     .font(.largeTitle)
                     .padding(.vertical, 10.0)
                 
-                PaletteView(colorPalette: paletteData.palette, clipboardColor: $clipboardColor)
+                PaletteView(colorPalette: paletteData.palette, clipboardColor: $clipboardColor,
+                            showClipboardMsg: $showClipboardMsg)
 
                 HStack
                 {

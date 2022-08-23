@@ -13,6 +13,7 @@ struct PaletteView: View
     let gridItems = [GridItem(.adaptive(minimum: 130))]
     
     @Binding var clipboardColor: Color
+    @Binding var showClipboardMsg: Bool
     
     var body: some View
     {
@@ -25,7 +26,8 @@ struct PaletteView: View
                 {
                     index in
                     
-                    ColorCardView(color: colorPalette[index], clipboardColor: $clipboardColor)
+                    ColorCardView(color: colorPalette[index], clipboardColor: $clipboardColor,
+                                  showClipboardMsg: $showClipboardMsg)
                 }
             }
         }
@@ -35,6 +37,7 @@ struct PaletteView: View
 
 struct PaletteView_Previews: PreviewProvider {
     static var previews: some View {
-        PaletteView(colorPalette: AppColors.testPalette, clipboardColor: .constant(Color.black))
+        PaletteView(colorPalette: AppColors.testPalette, clipboardColor: .constant(Color.black),
+                    showClipboardMsg: .constant(true))
     }
 }

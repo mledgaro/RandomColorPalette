@@ -12,6 +12,7 @@ struct ColorCardView: View
 
     var color: Color
     @Binding var clipboardColor: Color
+    @Binding var showClipboardMsg: Bool
     
     var body: some View
     {
@@ -35,12 +36,14 @@ struct ColorCardView: View
             pasteboard.string = color.hex
             print(color.hex)
             clipboardColor = color
+            showClipboardMsg = true
         }
     }
 }
 
 struct ColorView_Previews: PreviewProvider {
     static var previews: some View {
-        ColorCardView(color: .black, clipboardColor: .constant(Color.black))
+        ColorCardView(color: .black, clipboardColor: .constant(Color.black),
+                      showClipboardMsg: .constant(true))
     }
 }
