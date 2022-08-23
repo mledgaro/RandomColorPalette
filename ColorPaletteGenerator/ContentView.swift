@@ -28,8 +28,6 @@ struct ContentView: View
                 
                 PaletteView(colorPalette: paletteData.palette, clipboardColor: $clipboardColor)
 
-                Spacer()
-                
                 HStack
                 {
                     Spacer()

@@ -10,35 +10,26 @@ import SwiftUI
 struct PaletteView: View
 {
     var colorPalette: [Color]
+    let gridItems = [GridItem(.adaptive(minimum: 130))]
     
     @Binding var clipboardColor: Color
     
     var body: some View
     {
-        VStack{
-            HStack
+        
+        ScrollView
+        {
+            LazyVGrid(columns: gridItems)
             {
-                Spacer()
-                ColorCardView(color: colorPalette[0], clipboardColor: $clipboardColor)
-                Spacer()
-                ColorCardView(color: colorPalette[1], clipboardColor: $clipboardColor)
-                Spacer()
-            }
-            HStack
-            {
-                Spacer()
-                ColorCardView(color: colorPalette[2], clipboardColor: $clipboardColor)
-                Spacer()
-                ColorCardView(color: colorPalette[3], clipboardColor: $clipboardColor)
-                Spacer()
-            }
-            HStack
-            {
-                Spacer()
-                ColorCardView(color: colorPalette[4], clipboardColor: $clipboardColor)
-                Spacer()
+                ForEach(0..<colorPalette.count)
+                {
+                    index in
+                    
+                    ColorCardView(color: colorPalette[index], clipboardColor: $clipboardColor)
+                }
             }
         }
+        
     }
 }
 
