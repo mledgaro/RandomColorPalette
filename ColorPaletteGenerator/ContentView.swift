@@ -22,7 +22,8 @@ struct ContentView: View
                 HStack
                 {
                     Spacer()
-                    Text(/*@START_MENU_TOKEN@*/"Color #000000 copied to your clipboard"/*@END_MENU_TOKEN@*/)
+                    //Text(/*@START_MENU_TOKEN@*/"Color #000000 copied to your clipboard"/*@END_MENU_TOKEN@*/)
+                    Text(String(paletteData.mainColor))
                         .font(.headline)
                         .frame(maxWidth: .infinity)
                         .foregroundColor(Color.white)
@@ -37,7 +38,9 @@ struct ContentView: View
                     .font(.largeTitle)
                     .padding(.vertical, 10.0)
                 
-                PaletteView(colorPalette: AppColors.testPalette )
+                //PaletteView(colorPalette: AppColors.testPalette)
+                PaletteView(colorPalette: paletteData.palette)
+
                 Spacer()
                 HStack
                 {

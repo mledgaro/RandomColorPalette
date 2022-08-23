@@ -11,7 +11,8 @@ import SwiftUI
 @MainActor
 class PaletteData: ObservableObject
 {
-    @Published var palette: ColorPalette? = nil
+    @Published var palette: [Color] = AppColors.testPalette
+    @Published var mainColor: String = "#000000"
     
     init()
     {
@@ -25,9 +26,8 @@ class PaletteData: ObservableObject
     {
         do
         {
-            let cpalette = try await ColormindAPI.fetchRandomPalette()
-            palette = cpalette
-            //print(palette?.palette)
+            self.palette = try await ColormindAPI.fetchRandomPalette()
+            self.mainColor = self.palette[0].hex
         }
         catch
         {

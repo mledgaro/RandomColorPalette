@@ -16,7 +16,7 @@ struct ColorPalette: Decodable
     {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         
-        let colors = try values.decode([[Int]].self, forKey: .colors)
+        let colors = try values.decode([[Int]].self, forKey: .result)
         
         palette = []
         
@@ -30,6 +30,6 @@ struct ColorPalette: Decodable
     
     enum CodingKeys: String, CodingKey
     {
-        case colors = "result"
+        case result
     }
 }

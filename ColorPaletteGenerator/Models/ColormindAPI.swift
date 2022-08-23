@@ -6,13 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct ColormindAPI
 {
     static private let apiUrl = URL(string: "http://colormind.io/api/")
     static private let reqParams: String = "{\"model\": \"default\"}"
     
-    static func fetchRandomPalette() async throws -> ColorPalette
+    static func fetchRandomPalette() async throws -> [Color]
     {
         var apiRequest = URLRequest(url: apiUrl!)
         
@@ -23,12 +24,9 @@ struct ColormindAPI
         
         let (data, _) = try await URLSession.shared.data(for: apiRequest)
         
-        //let response = String(data: data, encoding: .utf8)
-        //print(response!)
-        
         let response = try JSONDecoder().decode(ColorPalette.self, from: data)
         
-        return response
+        return response.palette
     }
     
 }

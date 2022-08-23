@@ -9,7 +9,6 @@ import SwiftUI
 
 struct PaletteView: View
 {
-    
     var colorPalette: [Color]
     
     var body: some View
