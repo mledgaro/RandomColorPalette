@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ColorCardView: View
 {
-    
+
     var color: Color
+    @Binding var clipboardColor: Color
     
     var body: some View
     {
@@ -33,12 +34,13 @@ struct ColorCardView: View
             let pasteboard = UIPasteboard.general
             pasteboard.string = color.hex
             print(color.hex)
+            clipboardColor = color
         }
     }
 }
 
 struct ColorView_Previews: PreviewProvider {
     static var previews: some View {
-        ColorCardView(color: .black)
+        ColorCardView(color: .black, clipboardColor: .constant(Color.black))
     }
 }

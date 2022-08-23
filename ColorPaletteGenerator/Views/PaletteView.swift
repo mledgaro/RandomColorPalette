@@ -11,29 +11,31 @@ struct PaletteView: View
 {
     var colorPalette: [Color]
     
+    @Binding var clipboardColor: Color
+    
     var body: some View
     {
         VStack{
             HStack
             {
                 Spacer()
-                ColorCardView(color: colorPalette[0])
+                ColorCardView(color: colorPalette[0], clipboardColor: $clipboardColor)
                 Spacer()
-                ColorCardView(color: colorPalette[1])
-                Spacer()
-            }
-            HStack
-            {
-                Spacer()
-                ColorCardView(color: colorPalette[2])
-                Spacer()
-                ColorCardView(color: colorPalette[3])
+                ColorCardView(color: colorPalette[1], clipboardColor: $clipboardColor)
                 Spacer()
             }
             HStack
             {
                 Spacer()
-                ColorCardView(color: colorPalette[4])
+                ColorCardView(color: colorPalette[2], clipboardColor: $clipboardColor)
+                Spacer()
+                ColorCardView(color: colorPalette[3], clipboardColor: $clipboardColor)
+                Spacer()
+            }
+            HStack
+            {
+                Spacer()
+                ColorCardView(color: colorPalette[4], clipboardColor: $clipboardColor)
                 Spacer()
             }
         }
@@ -42,6 +44,6 @@ struct PaletteView: View
 
 struct PaletteView_Previews: PreviewProvider {
     static var previews: some View {
-        PaletteView(colorPalette: AppColors.testPalette)
+        PaletteView(colorPalette: AppColors.testPalette, clipboardColor: .constant(Color.black))
     }
 }

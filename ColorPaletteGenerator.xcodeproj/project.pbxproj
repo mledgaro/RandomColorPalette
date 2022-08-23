@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0480D46C28B4D72B00E7D733 /* ClipboardMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480D46B28B4D72B00E7D733 /* ClipboardMessage.swift */; };
 		04CAC38B28B0601A0064C693 /* ColorPaletteGeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC38A28B0601A0064C693 /* ColorPaletteGeneratorApp.swift */; };
 		04CAC38D28B0601A0064C693 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAC38C28B0601A0064C693 /* ContentView.swift */; };
 		04CAC38F28B060200064C693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CAC38E28B060200064C693 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0480D46B28B4D72B00E7D733 /* ClipboardMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardMessage.swift; sourceTree = "<group>"; };
 		04CAC38728B0601A0064C693 /* ColorPaletteGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPaletteGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CAC38A28B0601A0064C693 /* ColorPaletteGeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteGeneratorApp.swift; sourceTree = "<group>"; };
 		04CAC38C28B0601A0064C693 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			children = (
 				04CAC3B528B09A3B0064C693 /* ColorCardView.swift */,
 				04CAC3B728B0C8940064C693 /* PaletteView.swift */,
+				0480D46B28B4D72B00E7D733 /* ClipboardMessage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				04CAC3B628B09A3B0064C693 /* ColorCardView.swift in Sources */,
 				04CAC38D28B0601A0064C693 /* ContentView.swift in Sources */,
 				04CAC3B828B0C8940064C693 /* PaletteView.swift in Sources */,
+				0480D46C28B4D72B00E7D733 /* ClipboardMessage.swift in Sources */,
 				04CAC3BB28B0D1B70064C693 /* AppColors.swift in Sources */,
 				04CAC3C228B367390064C693 /* PaletteData.swift in Sources */,
 				04CAC3BD28B1837A0064C693 /* ColorPalette.swift in Sources */,
